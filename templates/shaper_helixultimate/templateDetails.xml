@@ -12,6 +12,7 @@
     <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
     <version>2.0.11</version>
     <description>Helix Ultimate - Starter Template of Helix Ultimate Framework</description>
+    <inheritable>1</inheritable>
 
     <updateservers>
         <server type="extension" 
@@ -90,6 +91,13 @@
         <folder>scss/</folder>
         <folder>webfonts/</folder>
     </files>
+    <media destination="templates/site/shaper_helixultimate" folder="media">
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+	</media>
     <config>
         <fieldset name="basic" 
             addfieldpath="/plugins/system/helixultimate/src/fields">
