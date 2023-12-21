@@ -260,7 +260,7 @@ class Media
 				$memoryLimit = $mediaHelper->toBytes(ini_get('memory_limit'));
 
 				// Check for the total size of post back data.
-				if (($postMaxSize > 0 && $contentLength > $postMaxSize) || ($memoryLimit !== -1 && $contentLength > $memoryLimit))
+				if (($postMaxSize > 0 && $contentLength > $postMaxSize) || ($memoryLimit !== "-1" && $contentLength > $memoryLimit))
 				{
 					$report['status'] = false;
 					$report['message'] = Text::_('COM_SPPAGEBUILDER_MEDIA_MANAGER_MEDIA_TOTAL_SIZE_EXCEEDS');
